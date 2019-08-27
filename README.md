@@ -18,6 +18,13 @@ composer require wyrihaximus/react-parallel-future-to-promise-converter
 # Usage
 
 ```php
+use React\EventLoop\Factory;
+use React\EventLoop\LoopInterface;
+use WyriHaximus\React\Parallel\FutureToPromiseConverter;
+
+$loop = Factory::create();
+$converter = new FutureToPromiseConverter($loop);
+
 $runtime = new Runtime('vendor/autoload.php');
 
 /** @var Future $future */
