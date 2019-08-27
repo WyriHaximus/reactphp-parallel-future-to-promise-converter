@@ -1,6 +1,6 @@
 {
-    "name": "wyrihaximus/react-parallel",
-    "description": "Bridging ext-parallel and ReactPHP",
+    "name": "wyrihaximus/react-parallel-future-to-promise-converter",
+    "description": "ReactPHP ext-parallel Future to Promise converter",
     "license": "MIT",
     "authors": [
         {
@@ -13,12 +13,10 @@
         "php": "^7.3",
         "ext-parallel": "*",
         "react/event-loop": "^1.1",
-        "react/promise": "^2.7",
-        "wyrihaximus/pool-info": "dev-master",
-        "wyrihaximus/ticking-promise": "^1.6"
+        "react/promise": "^2.7"
     },
     "require-dev": {
-        "ocramius/package-versions": "^1.4",
+        "thecodingmachine/safe": "^0.1.16",
         "wyrihaximus/async-test-utilities": "^1.1"
     },
     "config": {
@@ -81,7 +79,12 @@
             "@unit"
         ],
         "qa-ci-extended": [
-            "@qa-all-extended"
+            "composer validate --ansi",
+            "@lint-php",
+            "@cs",
+            "@stan",
+            "@unit-coverage",
+            "@infection"
         ],
         "qa-ci-windows": [
             "@qa-windows"
