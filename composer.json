@@ -83,8 +83,7 @@
             "@lint-php",
             "@cs",
             "@stan",
-            "@unit-coverage",
-            "@infection"
+            "@unit-coverage"
         ],
         "qa-ci-windows": [
             "@qa-windows"
