@@ -23,7 +23,7 @@ final class FutureToPromiseConverter
         return new Promise(function ($resolve, $reject) use ($future): void {
             /** @var TimerInterface|null $timer */
             $timer = $this->loop->addPeriodicTimer(0.001, function () use (&$timer, $future, $resolve, $reject): void {
-                if ($future->done()) {
+                if (!$future->done()) {
                     return;
                 }
 
