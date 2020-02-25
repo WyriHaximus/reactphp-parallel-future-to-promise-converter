@@ -1,3 +1,6 @@
+# Moved to: https://github.com/reactphp-parallel/future-to-promise-converter
+
+
 # ReactPHP ext-parallel Future to Promise converter
 
 [![Build Status](https://travis-ci.com/WyriHaximus/reactphp-parallel-future-to-promise-converter.svg?branch=master)](https://travis-ci.com/WyriHaximus/reactphp-parallel-future-to-promise-converter)
