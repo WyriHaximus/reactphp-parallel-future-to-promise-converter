@@ -79,11 +79,7 @@
             "@unit"
         ],
         "qa-ci-extended": [
-            "composer validate --ansi",
-            "@lint-php",
-            "@cs",
-            "@stan",
-            "@unit-coverage"
+            "@qa-all-extended"
         ],
         "qa-ci-windows": [
             "@qa-windows"
